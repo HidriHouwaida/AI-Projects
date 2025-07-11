@@ -11,3 +11,12 @@ Ce projet explore deux bibliothèques populaires pour la reconnaissance faciale 
     * ✅ Comptage automatique du nombre de visages présents
 
     * ✅ Annotation des visages (ajout de cadres ou traits autour des visages détectés)
+  * DeepFace : est une bibliothèque avancée de reconnaissance faciale offrant des fonctionnalités d'analyse approfondie :
+    * 🔍 Identification démographique : estimation précise de l'âge et du genre
+
+    * 😊 Analyse des émotions : détection des expressions faciales (joie, colère, tristesse ....)
+
+    * 🆔 Reconnaissance faciale avancée avec plusieurs modèles (VGG-Face, Facenet, ArcFace)
+
+    * 📊 Métriques détaillées : scores de confiance et comparaisons faciales
+    
