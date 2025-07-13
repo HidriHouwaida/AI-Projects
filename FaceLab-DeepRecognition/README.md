@@ -25,5 +25,21 @@ Ce projet explore deux bibliothèques populaires pour la reconnaissance faciale 
 Avant d'installer face_recognition, assurez-vous que : 
   * CMake est installé et ajouté au PATH (lien d'installation : https://cmake.org/download/)
   * Wheel est installé  (commande d'installation : pip install wheel)
-  * dlib est correctement compilé (requiert un compilateur C++ comme Visual Studio Build Tools sous Windows).
+  * dlib est correctement compilé (requiert un compilateur C++ comme Visual Studio Build Tools sous Windows https://visualstudio.microsoft.com/fr/visual-cpp-build-tools/).
+#### Comparaison faciale 
+##### Commande de base pour la comparaison faciale
+```python
+face_recognition C:\Users\PC\Desktop\FaceRecognition\Pictures/Known C:\Users\PC\Desktop\FaceRecognition\Pictures/Unknown
+```
+##### Fonctionnalité 
+Cette commande compare chaque image du dossier Unknown avec les images du dossier Known et retourne :
+* Le nom de la personne reconnue (si une correspondance est trouvée).
+* unknown_person (si aucun visage connu n'est détecté).
+##### Explication 
+* Dossier Known : contient  des images de références 
+* Dossier Unknown : Contient les images à analyser (visages non étiquetés)
+* Sortie : Un rapport CSV-like affichant les paires image_inconnue, personne_identifiée.
+  
+  <img width="1687" height="261" alt="Cmparaison" src="https://github.com/user-attachments/assets/c571ab45-d050-4c9c-8b64-1810aebc636e" />
+
     
