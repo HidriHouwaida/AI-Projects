@@ -20,3 +20,10 @@ Ce projet explore deux bibliothèques populaires pour la reconnaissance faciale 
 
     * 📊 Métriques détaillées : scores de confiance et comparaisons faciales
     
+### Exploration de face_recognition
+#### Prérequis d'installation
+Avant d'installer face_recognition, assurez-vous que : 
+  * CMake est installé et ajouté au PATH (lien d'installation : https://cmake.org/download/)
+  * Wheel est installé  (commande d'installation : pip install wheel)
+  * dlib est correctement compilé (requiert un compilateur C++ comme Visual Studio Build Tools sous Windows).
+    
