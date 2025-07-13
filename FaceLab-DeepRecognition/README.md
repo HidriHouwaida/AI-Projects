@@ -51,6 +51,6 @@ print(face_location)
 ```
 ##### Fonctionnalité 
 Le code permet de localiser avec précision tous les visages présents dans l'image (groupe_1) en retournant leurs positions sous forme de coordonnées rectangulaires.
-##### Résultat 
+##### Sortie 
 <img width="1831" height="186" alt="image" src="https://github.com/user-attachments/assets/6e811569-3ad4-42ec-b261-985e376ebbac" />
 
