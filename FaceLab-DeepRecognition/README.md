@@ -42,7 +42,7 @@ Cette commande compare chaque image du dossier Unknown avec les images du dossie
   
   <img width="1687" height="261" alt="Cmparaison" src="https://github.com/user-attachments/assets/c571ab45-d050-4c9c-8b64-1810aebc636e" />
 
- # Localisation des visages dans une image 
+ #### Localisation des visages dans une image 
    ```python
 import face_recognition
 image=face_recognition.load_image_file('C:/Users/PC/Desktop/FaceRecognition/Group/group_1.jpg')
