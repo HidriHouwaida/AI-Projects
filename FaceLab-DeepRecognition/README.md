@@ -54,3 +54,12 @@ Le code permet de localiser avec précision tous les visages présents dans l'im
 ##### Sortie 
 <img width="1831" height="186" alt="image" src="https://github.com/user-attachments/assets/6e811569-3ad4-42ec-b261-985e376ebbac" />
 
+#### Comptage des visages dans une image
+ ```python
+print(f"Il y a {len(face_locations)} personnes dans cette image ")
+```
+##### Fonctionnalité
+Ce code permet de déterminer le nombre de visages détectés dans une image en utilisant la longueur de la liste retournée par face_recognition.face_locations().
+##### Sortie 
+<img width="1841" height="212" alt="image" src="https://github.com/user-attachments/assets/a9a243b4-3f7d-475b-938e-ef5fce9bb2a8" />
+
