@@ -70,3 +70,24 @@ Albert_face_encoding=face_recognition.face_encodings(Albert_Einstein)[0]
 ```
 ##### Fonctionnalité
 La fonction face_recognition.face_encodings() convertit les visages détectés en signatures numériques uniques (vecteurs de 128 dimensions), permettant des comparaisons et identifications précises.
+#### Comparaison de visages avec face_encoding et compare_faces
+ ```python
+# Encodage des deux visages dans deux images différent 
+Albert_Einstein=face_recognition.load_image_file('C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png')
+Albert_face_encoding=face_recognition.face_encodings(Albert_Einstein)[0]
+
+Unknown_img=face_recognition.load_image_file('C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/Erwin.jpg')
+Unknown_img_face_encoding=face_recognition.face_encodings(Unknown_img)[0]
+
+# Comparaison des deux visages 
+
+Resultat=face_recognition.compare_faces([Albert_face_encoding],Unknown_img_face_encoding)
+if Resultat[0]:
+    print("c'est Albert Einstein ") 
+else :
+   print("ce n'est pas Albert Einstein ")
+```
+##### Fonctionnalité
+Ce code permet de comparer deux visages en générant leurs signatures numériques (face_encoding) puis en évaluant leur similarité avec compare_faces, affichant si le visage inconnu correspond à Albert Einstein.
+##### Sortie 
+<img width="1826" height="180" alt="image" src="https://github.com/user-attachments/assets/590e9c95-7992-46af-aee3-cab07ab68f39" />
