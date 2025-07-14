@@ -91,3 +91,18 @@ else :
 Ce code permet de comparer deux visages en générant leurs signatures numériques (face_encoding) puis en évaluant leur similarité avec compare_faces, affichant si le visage inconnu correspond à Albert Einstein.
 ##### Sortie 
 <img width="1826" height="180" alt="image" src="https://github.com/user-attachments/assets/590e9c95-7992-46af-aee3-cab07ab68f39" />
+
+#### Extraction et Sauvegarde des Visages Détectés
+ ```python
+index=0
+# Isolation de chaque visage dans l'image et l'enregistrer  
+for face_location in face_locations : 
+    top, right, bottom, left=face_location
+    face_image=image[top:bottom, left:right]
+    pil_image=Image.fromarray(face_image)
+    index=index+1
+    #pil_image.show()
+    pil_image.save(f'visage_{index}.jpg', quality=95)
+```
+##### Fonctionnalité
+Ce code isole chaque visage détecté dans une image et l'enregistre individuellement sous forme de fichier JPEG.
