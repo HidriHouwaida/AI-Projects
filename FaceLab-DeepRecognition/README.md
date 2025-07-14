@@ -63,3 +63,10 @@ Ce code permet de déterminer le nombre de visages détectés dans une image en 
 ##### Sortie 
 <img width="1841" height="212" alt="image" src="https://github.com/user-attachments/assets/a9a243b4-3f7d-475b-938e-ef5fce9bb2a8" />
 
+#### Encodage des visages
+ ```python
+Albert_Einstein=face_recognition.load_image_file('C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png')
+Albert_face_encoding=face_recognition.face_encodings(Albert_Einstein)[0]
+```
+##### Fonctionnalité
+La fonction face_recognition.face_encodings() convertit les visages détectés en signatures numériques uniques (vecteurs de 128 dimensions), permettant des comparaisons et identifications précises.
