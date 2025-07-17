@@ -106,3 +106,11 @@ for face_location in face_locations :
 ```
 ##### Fonctionnalité
 Ce code isole chaque visage détecté dans une image et l'enregistre individuellement sous forme de fichier JPEG.
+
+#### Détection et Annotation des Points Clés Faciaux
+```python
+image = face_recognition.load_image_file('C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png')
+face_landmarks_list = face_recognition.face_landmarks(image)
+```
+##### Fonctionnalité
+Ce code détecte les 68 points clés du visage (yeux, nez, bouche) d'Albert Einstein via face_landmarks, permettant de visualiser ses traits faciaux
