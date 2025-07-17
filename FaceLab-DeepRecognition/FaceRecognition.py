@@ -33,3 +33,5 @@ for face_location in face_locations :
     index=index+1
     #pil_image.show() 
     pil_image.save(f'visage_{index}.jpg', quality=95)
+# Dessiner les Contours de visage d'Albert 
+face_landmarks_list = face_recognition.face_landmarks(Albert_Einstein)
