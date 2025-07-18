@@ -159,3 +159,9 @@ print("Images similaires trouvées:")
 for chemin in chemins_similaires:
     print(chemin)
 ```
+
+##### Fonctionnalité
+Ce code compare "Albert.png" avec toutes les images du dossier "Unknown" et affiche les chemins des visages similaires
+##### Sortie 
+<img width="1235" height="109" alt="image" src="https://github.com/user-attachments/assets/c933e268-fbae-4915-b7f7-34a82817c89f" />
+
