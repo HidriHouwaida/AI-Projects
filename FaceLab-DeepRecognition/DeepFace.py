@@ -19,8 +19,13 @@ print("Images similaires trouvées:")
 for chemin in chemins_similaires:
     print(chemin)
 # Analyse démographique et émotionnelle
-Detaction_ED = DeepFace.analyze(
-  img_path = 'C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/garcon_riant.jpg', 
-  actions = ['age', 'gender', 'race', 'emotion'],
-)
-print(Detaction_ED)
+result = DeepFace.analyze(img_path='C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/garcon_riant.jpg', actions=['age','gender','race','emotion'])[0]
+genre_dominant = max(result['gender'].items(), key=lambda x: x[1])[0]
+
+print(f"""
+Analyse faciale simplifiée :
+- Âge estimé : {result['age']} ans
+- Genre : {genre_dominant}
+- Origine ethnique : {result['dominant_race']}
+- Émotion : {result['dominant_emotion']}
+""")
