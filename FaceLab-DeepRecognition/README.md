@@ -111,6 +111,17 @@ Ce code isole chaque visage détecté dans une image et l'enregistre individuell
 ```python
 image = face_recognition.load_image_file('C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png')
 face_landmarks_list = face_recognition.face_landmarks(image)
+# Convertir l'image numpy array en image PIL
+pil_image = Image.fromarray(image)
+draw = ImageDraw.Draw(pil_image)
+# Dessiner les landmarks sur l'image
+for face_landmarks in face_landmarks_list:
+    for facial_feature, points in face_landmarks.items():
+        # Dessiner des lignes entre les points pour chaque partie du visage
+        draw.line(points, fill=(0, 0, 255), width=1) 
+
+# Afficher l'image avec les landmarks
+pil_image.show()
 ```
 ##### Fonctionnalité
 Ce code détecte les 68 points clés du visage (yeux, nez, bouche) d'Albert Einstein via face_landmarks, permettant de visualiser ses traits faciaux
