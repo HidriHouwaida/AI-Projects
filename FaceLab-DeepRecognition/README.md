@@ -129,3 +129,20 @@ Ce code détecte les 68 points clés du visage (yeux, nez, bouche) d'Albert Eins
 
 
 ### Exploration de DeepFace
+
+#### Comparaison faciale
+```python
+from deepface import DeepFace
+# Comparaison des visages dans deux images 
+Comparaison = DeepFace.verify(
+  img1_path= "C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png",
+  img2_path = "C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/Erwin.jpg",
+  model_name="Facenet",
+
+)
+print(Comparaison)
+```
+##### Fonctionnalité
+Ce code compare deux visages à l’aide de modèle de deep learning (Facenet) et retourne un dictionnaire indiquant s’ils correspondent, avec des métriques de similarité détaillées.
+##### Sortie 
+<img width="1703" height="69" alt="image" src="https://github.com/user-attachments/assets/5134af8d-a083-402b-80df-ac93025fc36c" />
