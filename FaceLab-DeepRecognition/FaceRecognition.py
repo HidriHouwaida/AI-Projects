@@ -35,3 +35,14 @@ for face_location in face_locations :
     pil_image.save(f'visage_{index}.jpg', quality=95)
 # Dessiner les Contours de visage d'Albert 
 face_landmarks_list = face_recognition.face_landmarks(Albert_Einstein)
+# Convertir l'image numpy array en image PIL
+pil_image = Image.fromarray(Albert_Einstein)
+draw = ImageDraw.Draw(pil_image)
+# Dessiner les landmarks sur l'image
+for face_landmarks in face_landmarks_list:
+    for facial_feature, points in face_landmarks.items():
+        # Dessiner des lignes entre les points pour chaque partie du visage
+        draw.line(points, fill=(0, 0, 255), width=1) 
+
+# Afficher l'image avec les landmarks
+pil_image.show()
