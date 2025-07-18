@@ -125,3 +125,7 @@ pil_image.show()
 ```
 ##### Fonctionnalité
 Ce code détecte les 68 points clés du visage (yeux, nez, bouche) d'Albert Einstein via face_landmarks, permettant de visualiser ses traits faciaux
+
+
+
+### Exploration de DeepFace
