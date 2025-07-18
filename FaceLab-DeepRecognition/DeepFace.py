@@ -1,8 +1,10 @@
 from deepface import DeepFace
 # Comparaison des visages dans deux images 
 Comparaison = DeepFace.verify(
-  Albert = 'C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png',
-  Erwin = 'C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/Erwin.jpg',
+  img1_path= "C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png",
+  img2_path = "C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/Erwin.jpg",
+  model_name="Facenet",
+
 )
 print(Comparaison)
 
