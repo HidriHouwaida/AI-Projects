@@ -146,3 +146,16 @@ print(Comparaison)
 Ce code compare deux visages à l’aide de modèle de deep learning (Facenet) et retourne un dictionnaire indiquant s’ils correspondent, avec des métriques de similarité détaillées.
 ##### Sortie 
 <img width="1703" height="69" alt="image" src="https://github.com/user-attachments/assets/5134af8d-a083-402b-80df-ac93025fc36c" />
+
+#### Recherche des images semblables à une image spécifique dans un dossier 
+```python
+Recherche = DeepFace.find(
+    img_path="C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png",
+    db_path="C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown",
+    model_name="Facenet"
+)
+chemins_similaires = Recherche[0]['identity'].tolist()  # Convertit la colonne en liste
+print("Images similaires trouvées:")
+for chemin in chemins_similaires:
+    print(chemin)
+```
