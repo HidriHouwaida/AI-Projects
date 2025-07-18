@@ -10,11 +10,14 @@ print(Comparaison)
 
 # Recherche des images semblable à une image spécifique dans un dossier 
 Recherche = DeepFace.find(
-  Albert = 'C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png',
-  Dossier_De_Recherche = 'C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/',
+    img_path="C:/Users/PC/Desktop/FaceRecognition/Pictures/Known/Albert.png",
+    db_path="C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown",
+    model_name="Facenet"
 )
-print(Recherche)
-
+chemins_similaires = Recherche[0]['identity'].tolist()  # Convertit la colonne en liste
+print("Images similaires trouvées:")
+for chemin in chemins_similaires:
+    print(chemin)
 # Analyse démographique et émotionnelle
 Detaction_ED = DeepFace.analyze(
   img_path = 'C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/garcon_riant.jpg', 
