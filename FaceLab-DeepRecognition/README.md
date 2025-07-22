@@ -165,3 +165,26 @@ Ce code compare "Albert.png" avec toutes les images du dossier "Unknown" et affi
 ##### Sortie 
 <img width="1235" height="109" alt="image" src="https://github.com/user-attachments/assets/c933e268-fbae-4915-b7f7-34a82817c89f" />
 
+#### Analyse Démographique et Émotionnelle
+```python
+result = DeepFace.analyze(img_path='C:/Users/PC/Desktop/FaceRecognition/Pictures/Unknown/garcon_riant.jpg', actions=['age','gender','race','emotion'])[0]
+genre_dominant = max(result['gender'].items(), key=lambda x: x[1])[0]
+
+print(f"""
+Analyse faciale simplifiée :
+- Âge estimé : {result['age']} ans
+- Genre : {genre_dominant}
+- Origine ethnique : {result['dominant_race']}
+- Émotion : {result['dominant_emotion']}
+""")
+```
+##### Fonctionnalité
+Ce module permet une détection multi-attributs avancée via Deep Learning :
+
+* Estimation d'âge avec une précision de ±5 ans
+
+* Analyse binaire de genre (homme/femme) accompagnée d'un score de confiance probabiliste
+
+* Classification ethnique parmi 5 catégories principales (asiatique, blanc, noir, moyen-oriental, indien)
+
+* Reconnaissance d'émotions couvrant 7 états fondamentaux (en colère, dégoûté, craintif, heureux, triste, surpris, neutre)
