@@ -188,3 +188,6 @@ Ce module permet une détection multi-attributs avancée via Deep Learning :
 * Classification ethnique parmi 5 catégories principales (asiatique, blanc, noir, moyen-oriental, indien)
 
 * Reconnaissance d'émotions couvrant 7 états fondamentaux (en colère, dégoûté, craintif, heureux, triste, surpris, neutre)
+##### Sortie
+<img width="1687" height="339" alt="image" src="https://github.com/user-attachments/assets/205d2e60-26cc-48cf-a6b1-00a5a3911c00" />
+
