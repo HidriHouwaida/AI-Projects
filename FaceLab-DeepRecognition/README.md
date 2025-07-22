@@ -191,3 +191,26 @@ Ce module permet une détection multi-attributs avancée via Deep Learning :
 ##### Sortie
 <img width="1687" height="339" alt="image" src="https://github.com/user-attachments/assets/205d2e60-26cc-48cf-a6b1-00a5a3911c00" />
 
+## 📊 Tableau comparatif
+
+| Critère                 | face_recognition                                                                 | DeepFace                                                                          |
+|-------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Fonctionnalités**     | ✅ Comparaison de visages<br>✅ Détection/comptage<br>✅ Encodage (128D)        |🔍 Reconnaissance + analyse démographique<br>😊 Émotions, âge, genre<br>🆚 Multi-modèles |
+| **Modèles utilisés**    | - Détection : HOG/CNN (dlib)<br>- Reconnaissance : ResNet-34 (dlib)               | - Reconnaissance : VGG-Face, Facenet, ArcFace<br>- Âge/Genre : DEX<br>- Émotions : Fer2013 |
+| **Précision**           | Moyenne à bonne                                                                  | Haute (surtout Facenet/ArcFace)                                                  |
+| **Vitesse**             | ⚡ Rapide                                                                        | 🐢 Variable selon modèle                                                         |
+| **Installation**        | Requiert CMake + dlib                                                            | `pip install deepface`                                                           |
+| **Points forts**        | - Simplicité<br>- Rapidité<br>- Bonne docs                                       | - Analyses avancées<br>- Personnalisation                                        |
+| **Limitations**         | - Pas d'analyse démographique<br>- Sensible à l'éclairage                       | - Gourmand en ressources<br>- Biais possibles                                    |
+
+## 🎯 Guide de choix
+
+### Choisir `face_recognition` quand :
+- Besoin de rapidité (applications temps réel)
+- Configuration simple requise
+- Fonctionnalités basiques suffisent
+
+### Choisir `DeepFace` quand :
+- Analyses avancées nécessaires (émotions, âge, genre)
+- Haute précision requise
+- Personnalisation des modèles importante
