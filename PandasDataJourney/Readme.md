@@ -39,3 +39,11 @@ df.info()       # Dataset information
 df.describe()   # Statistical summary
 df.shape        # Dimensions (rows, columns)
 ```
+## Loading Data from Files
+```python
+coffee = pd.read_csv('coffee.csv') # CSV Files
+result = pd.read_parquet('results.parquet') # Parquet Files
+olympics = pd.read_excel('olympics.xlsx')
+```
+### Parquet 
+Parquet is the most performant format for data scientists because its columnar storage architecture enables handling huge datasets efficiently. By storing data in columns rather than rows, it provides superior compression and allows reading only specific columns needed for analysis. This selective reading capability, combined with predicate pushdown filtering, dramatically reduces memory usage and processing time. These features make Parquet essential for working with large-scale data in machine learning and analytics workflows.
