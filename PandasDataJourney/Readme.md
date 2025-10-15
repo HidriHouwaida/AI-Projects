@@ -30,3 +30,12 @@ Key Parameters
 * index: Row labels
 
 * copy: Whether to copy input data (default: False)
+
+### Essential Operations
+```python
+df.head()       # First 5 rows
+df.tail()       # Last 5 rows  
+df.info()       # Dataset information
+df.describe()   # Statistical summary
+df.shape        # Dimensions (rows, columns)
+```
