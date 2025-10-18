@@ -103,3 +103,8 @@ coffee['new price']=np.where(coffee['Coffee Type']=='Espresso', 3.99, 5.99)
 coffee.drop(columns='price', inplace=True)
 ```
 The drop() method operates immutably by default, returning a modified copy of the DataFrame without altering the original structure. To persist changes directly to the source DataFrame, the inplace=True parameter must be explicitly specified, enabling destructive modification of the underlying data
+* Using del Method
+```python
+del coffee['price']
+```
+The del operator performs immediate in-place column deletion, directly modifying the original DataFrame's structure without creating a copy. 
