@@ -120,3 +120,5 @@ This performs a left join matching records where bios['born_country'] equals noc
 coffee.fillna(coffee['Units Sold'].mean())
 ```
 Replaces missing values in the 'Units Sold' column with the arithmetic mean of available values in that column
+### Data Interpolation Method
+interpolate() estimates missing values by calculating intermediate data points between existing known values in a sequence.
