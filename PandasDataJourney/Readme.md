@@ -108,3 +108,4 @@ The drop() method operates immutably by default, returning a modified copy of th
 del coffee['price']
 ```
 The del operator performs immediate in-place column deletion, directly modifying the original DataFrame's structure without creating a copy. 
+## Merging and Concatenating Data
