@@ -109,3 +109,8 @@ del coffee['price']
 ```
 The del operator performs immediate in-place column deletion, directly modifying the original DataFrame's structure without creating a copy. 
 ## Merging and Concatenating Data
+* Join Operation
+```python
+bios_new = pd.merge(bios, nocs, left_on='born_country', right_on='NOC', how='left')
+```
+This performs a left join matching records where bios['born_country'] equals nocs['NOC']. All original records from bios are preserved, while matching data from nocs is appended. Non-matching records receive NaN values for nocs columns.
