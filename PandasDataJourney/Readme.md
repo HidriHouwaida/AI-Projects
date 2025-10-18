@@ -92,3 +92,9 @@ Creates a new column 'price' populated entirely with the constant value 4.99
 ```python
 coffee.loc[(coffee['Coffee Type'] == 'Espresso'), 'price'] = 10
 ```
+### Column Removal Methods
+* Using drop() Method
+```python
+coffee.drop(columns='price', inplace=True)
+```
+The drop() method operates immutably by default, returning a modified copy of the DataFrame without altering the original structure. To persist changes directly to the source DataFrame, the inplace=True parameter must be explicitly specified, enabling destructive modification of the underlying data
