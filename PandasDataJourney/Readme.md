@@ -114,3 +114,9 @@ The del operator performs immediate in-place column deletion, directly modifying
 bios_new = pd.merge(bios, nocs, left_on='born_country', right_on='NOC', how='left')
 ```
 This performs a left join matching records where bios['born_country'] equals nocs['NOC']. All original records from bios are preserved, while matching data from nocs is appended. Non-matching records receive NaN values for nocs columns.
+## Handling Null Values
+### Mean Imputation
+```python
+coffee.fillna(coffee['Units Sold'].mean())
+```
+Replaces missing values in the 'Units Sold' column with the arithmetic mean of available values in that column
