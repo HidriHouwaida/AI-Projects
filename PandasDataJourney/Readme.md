@@ -56,3 +56,29 @@ Parquet is the most performant format for data scientists because its columnar s
 * sort_values(by, ascending) - Orders DataFrame by specified columns with controllable sort direction
 * at[row_label, column_label] - Optimized label-based scalar access for fast single-element operations
 * iat[row_position, column_position] - Optimized integer-based scalar access for maximum performance on positional indexing
+## Advanced Data Filtering and Querying Methods
+### Conditional Filtering
+* Single Condition Filtering
+```python
+bios.loc[bios['height_cm'] > 220]
+```
+* Multi-Condition Boolean Filtering
+```python
+bios.loc[
+    (bios['height_cm'] > 215) & 
+    (bios["born_country"] == "USA"), 
+    ["name", "height_cm"]
+]
+```
+### String Operation Filtering
+* Pattern Matching
+```python
+bios[bios['name'].str.contains("Keith")]
+```
+### SQL-Style Query Interface
+* Declarative Query Syntax
+```python
+bios.query('born_country == "USA"')
+```
+
+
