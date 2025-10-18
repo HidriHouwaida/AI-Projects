@@ -54,3 +54,5 @@ Parquet is the most performant format for data scientists because its columnar s
 * loc[row_labels, column_labels] - Label-based selection using explicit row and column identifiers
 * iloc[row_positions, column_positions] - Integer-position based selection using numerical indices
 * sort_values(by, ascending) - Orders DataFrame by specified columns with controllable sort direction
+* at[row_label, column_label] - Optimized label-based scalar access for fast single-element operations
+* iat[row_position, column_position] - Optimized integer-based scalar access for maximum performance on positional indexing
