@@ -47,3 +47,10 @@ olympics = pd.read_excel('olympics.xlsx')
 ```
 ### Parquet 
 Parquet is the most performant format for data scientists because its columnar storage architecture enables handling huge datasets efficiently. By storing data in columns rather than rows, it provides superior compression and allows reading only specific columns needed for analysis. This selective reading capability, combined with predicate pushdown filtering, dramatically reduces memory usage and processing time. These features make Parquet essential for working with large-scale data in machine learning and analytics workflows.
+## Accessing Data 
+* head(n) - Returns the first n rows (default: 5) for preliminary data assessment
+* tail(n) - Returns the last n rows (default: 5) for end-of-dataset inspection
+* sample(n, random_state) - Generates random sample of n rows with reproducible results via random_state
+* loc[row_labels, column_labels] - Label-based selection using explicit row and column identifiers
+* iloc[row_positions, column_positions] - Integer-position based selection using numerical indices
+* sort_values(by, ascending) - Orders DataFrame by specified columns with controllable sort direction
