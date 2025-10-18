@@ -87,5 +87,8 @@ bios.query('born_country == "USA"')
 coffee['price'] = 4.99
 ```
 Creates a new column 'price' populated entirely with the constant value 4.99
-
-
+### Conditional Data Modification
+* Condition-Based Column Modification
+```python
+coffee.loc[(coffee['Coffee Type'] == 'Espresso'), 'price'] = 10
+```
