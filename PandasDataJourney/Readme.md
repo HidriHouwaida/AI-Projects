@@ -92,6 +92,11 @@ Creates a new column 'price' populated entirely with the constant value 4.99
 ```python
 coffee.loc[(coffee['Coffee Type'] == 'Espresso'), 'price'] = 10
 ```
+* Conditional Column Modification with NumPy
+```python
+import numpy as np
+coffee['new price']=np.where(coffee['Coffee Type']=='Espresso', 3.99, 5.99)
+```
 ### Column Removal Methods
 * Using drop() Method
 ```python
