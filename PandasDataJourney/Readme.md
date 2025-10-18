@@ -80,5 +80,12 @@ bios[bios['name'].str.contains("Keith")]
 ```python
 bios.query('born_country == "USA"')
 ```
+## Adding or Removing Columns 
+### Adding New Columns
+*Basic Column Assignment
+```python
+coffee['price'] = 4.99
+```
+Creates a new column 'price' populated entirely with the constant value 4.99
 
 
