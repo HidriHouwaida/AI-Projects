@@ -25,3 +25,11 @@ NumPy provides convenient functions to generate arrays with specific initial val
 The numpy.linspace() function is particularly valuable in data science and machine learning workflows. It's commonly used to generate test data, parameter ranges, and evaluation points for various algorithms.
 
 Regardless of the constructor used to create an array, you can enforce a single data type for all elements using the dtype parameter.
+
+### Array Dimensions and Size
+NumPy provides several functions to inspect the structure and size of arrays:
+* numpy.shape() : Returns a tuple representing the dimensions of the array (number of rows, columns,..)
+* numpy.ndim : Returns the number of dimensions (axes) of the array
+* numpy.size() : Returns the total number of elements in the array
+
+
