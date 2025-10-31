@@ -28,8 +28,9 @@ Regardless of the constructor used to create an array, you can enforce a single 
 
 ### Array Dimensions and Size
 NumPy provides several functions to inspect the structure and size of arrays:
-* numpy.shape() : Returns a tuple representing the dimensions of the array (number of rows, columns,..)
-* numpy.ndim : Returns the number of dimensions (axes) of the array
-* numpy.size() : Returns the total number of elements in the array
+* numpy.shape : Returns a tuple representing the dimensions of the array (number of rows, columns,..)
+* numpy.ndim  : Returns the number of dimensions of the array
+* numpy.size  : Returns the total number of elements in the array
+### Manipulate Arrays
 
 
