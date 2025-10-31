@@ -23,3 +23,5 @@ NumPy provides convenient functions to generate arrays with specific initial val
 * numpy.linspace(0, 1, 5) : Creates a 1D array of 5 evenly spaced numbers between 0 and 1
 
 The numpy.linspace() function is particularly valuable in data science and machine learning workflows. It's commonly used to generate test data, parameter ranges, and evaluation points for various algorithms.
+
+Regardless of the constructor used to create an array, you can enforce a single data type for all elements using the dtype parameter.
