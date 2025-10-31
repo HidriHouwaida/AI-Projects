@@ -32,5 +32,8 @@ NumPy provides several functions to inspect the structure and size of arrays:
 * numpy.ndim  : Returns the number of dimensions of the array
 * numpy.size  : Returns the total number of elements in the array
 ### Manipulate Arrays
-
+#### Array Stacking Operations
+* Horizontal Stacking : The np.hstack((array1, array2)) function concatenates arrays horizontally (column-wise). Arrays must have the same number of rows.
+* Vertical Stacking: The np.vstack((array1, array2)) function concatenates arrays vertically (row-wise). Arrays must have the same number of columns.
+* The np.concatenate() function provides a versatile way to join arrays along an existing axis, offering more control than hstack and vstack.
 
