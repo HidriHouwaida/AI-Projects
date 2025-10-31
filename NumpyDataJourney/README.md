@@ -21,4 +21,5 @@ NumPy provides convenient functions to generate arrays with specific initial val
 * numpy.ones((2,3)) : Creates a 2x3 array filled with ones
 * numpy.full((2,3),7) : Creates a 2x3 array where all elements are 7
 * numpy.linspace(0, 1, 5) : Creates a 1D array of 5 evenly spaced numbers between 0 and 1
+
 The numpy.linspace() function is particularly valuable in data science and machine learning workflows. It's commonly used to generate test data, parameter ranges, and evaluation points for various algorithms.
