@@ -36,4 +36,6 @@ NumPy provides several functions to inspect the structure and size of arrays:
 * Horizontal Stacking : The np.hstack((array1, array2)) function concatenates arrays horizontally (column-wise). Arrays must have the same number of rows.
 * Vertical Stacking: The np.vstack((array1, array2)) function concatenates arrays vertically (row-wise). Arrays must have the same number of columns.
 * The np.concatenate() function provides a versatile way to join arrays along an existing axis, offering more control than hstack and vstack.
-
+#### Array Reshaping Operations
+* The reshape() method is a powerful tool for modifying array dimensions while preserving the total number of elements.
+* Squeeze() is a method that allows us to remove dimensions of size one from arrays, which is particularly useful in deep learning and data analysis when dealing with superfluous batch dimensions. This function helps clean up array shapes by eliminating singleton axes that often result from operations like model predictions or data loading pipelines, making data more manageable and compatible with various algorithms.
