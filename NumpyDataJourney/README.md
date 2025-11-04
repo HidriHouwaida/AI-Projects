@@ -39,3 +39,4 @@ NumPy provides several functions to inspect the structure and size of arrays:
 #### Array Reshaping Operations
 * The reshape() method is a powerful tool for modifying array dimensions while preserving the total number of elements.
 * Squeeze() is a method that allows us to remove dimensions of size one from arrays, which is particularly useful in deep learning and data analysis when dealing with superfluous batch dimensions. This function helps clean up array shapes by eliminating singleton axes that often result from operations like model predictions or data loading pipelines, making data more manageable and compatible with various algorithms.
+* Ravel() is a method that returns a flattened, 1D view of the input array whenever possible, preserving the original data without making a copy.
